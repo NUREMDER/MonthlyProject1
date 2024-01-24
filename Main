@@ -9,6 +9,8 @@ public class Main {
         System.out.println("2. Subtraction");
         System.out.println("3. Multiplication");
         System.out.println("4. Division");
+        System.out.println("5. Squareroot");
+        System.out.println("6. Power");
 
         ScientificCalculator calculator = new ScientificCalculator();
         Scanner sc = new Scanner(System.in);
@@ -33,13 +35,24 @@ public class Main {
 
 
         } else if (choice == 4) {
-            System.out.println("Bölme işlemi için sayılarınızı girin :");
+                System.out.println("Bölme işlemi için sayılarınızı girin :");
 
-            System.out.println("Sonuç : " + calculator.division(sc.nextDouble(), sc.nextDouble()));
+                System.out.println("Sonuç : " + calculator.division(sc.nextDouble(), sc.nextDouble()));
 
+        }else if (choice == 5) {
+            System.out.println("Karekök işlemi için sayınızı girin :");
+
+            System.out.println("Sonuç : " + calculator.squareRoot(sc.nextDouble()));
+
+        }else if (choice == 6) {
+                System.out.println("üs alma işlemi için sayılarınızı girin :");
+
+                System.out.println("Sonuç : " + calculator.power(sc.nextDouble(), sc.nextDouble()));
         } else {
-            System.out.println("invalid choice");
+            System.out.println("Geçersiz seçim.");
+
 
         }
     }
 }
+
