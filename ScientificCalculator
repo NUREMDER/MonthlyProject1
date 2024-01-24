@@ -35,5 +35,16 @@ public class ScientificCalculator {
 
         return value3;
     }
-    
+
+    public double squareRoot(double value1){
+
+        return Math.sqrt(value1);
+    }
+    public double power(double value1, double value2){
+
+        value3 = Math.pow(value1,value2);
+
+        return value3;
+    }
+
 }
