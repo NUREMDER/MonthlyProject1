@@ -46,5 +46,17 @@ public class ScientificCalculator {
 
         return value3;
     }
+    public double sinus (double value1){
 
+        return Math.sin(value1);
+    }
+    public double cosinus (double value1){
+
+        return Math.cos(value1);
+    }
+    public double remain (int value1, int value2){
+
+        value3 = value1 % value2;
+        return value3;
+    }
 }
