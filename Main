@@ -10,20 +10,21 @@ public class Main {
         ScientificCalculator calculator = new ScientificCalculator();
         Scanner sc = new Scanner(System.in);
         String startcalculate = sc.nextLine();
-        
+
+        System.out.println("1. Addition");
+        System.out.println("2. Subtraction");
+        System.out.println("3. Multiplication");
+        System.out.println("4. Division");
+        System.out.println("5. Squareroot");
+        System.out.println("6. Power");
+        System.out.println("7. Sin");
+        System.out.println("8. Cos");
+        System.out.println("9. Remain");
+        System.out.println("0. Finish the process");
+
 
         while (Objects.equals(startcalculate, "start")){
 
-            System.out.println("1. Addition");
-            System.out.println("2. Subtraction");
-            System.out.println("3. Multiplication");
-            System.out.println("4. Division");
-            System.out.println("5. Squareroot");
-            System.out.println("6. Power");
-            System.out.println("7. Sin");
-            System.out.println("8. Cos");
-            System.out.println("9. Remain");
-            System.out.println("0. Finish the process");
             System.out.println("Choose operation: ");int choice = sc.nextInt();
 
         if (choice == 1) {
@@ -37,12 +38,10 @@ public class Main {
 
             System.out.println("Sonuç : " + calculator.subtraction(sc.nextDouble(), sc.nextDouble()));
 
-
         } else if (choice == 3) {
             System.out.println("Çarpma işlemi için sayılarınızı girin :");
 
             System.out.println("Sonuç : " + calculator.multiplication(sc.nextDouble(), sc.nextDouble()));
-
 
         } else if (choice == 4) {
                 System.out.println("Bölme işlemi için sayılarınızı girin :");
@@ -74,12 +73,14 @@ public class Main {
 
                 System.out.println("Sonuç : " + calculator.remain(sc.nextInt(), sc.nextInt()));
 
-        } else {
-        System.out.println("Geçersiz seçim.");
+        } else if(choice == 0) {
+        System.out.println("Process is finished.");
+        System.exit(0);
 
-    }
-  } System.out.println("Process is finished.");
+    } else {
+            System.out.println("Geçersiz seçim.");
+
+        }
+  }
  }
 }
-
-
