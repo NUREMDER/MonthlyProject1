@@ -48,11 +48,11 @@ public class ScientificCalculator {
     }
     public double sinus (double value1){
 
-        return Math.sin(value1);
+        return Math.sin(Math.toRadians(value1));
     }
     public double cosinus (double value1){
 
-        return Math.cos(value1);
+        return Math.cos(Math.toRadians(value1));
     }
     public double remain (int value1, int value2){
 
